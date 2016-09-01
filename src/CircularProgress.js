@@ -45,36 +45,36 @@ export default class CircularProgress extends React.Component {
     const circlePath = this.circlePath(size / 2, size / 2, size / 2 - width / 2, 0, 360 * fill / 100);
 
     return (
-      <View style={style}>
+        <View style={style}>
         <Svg
-          width={size}
-          height={size}
+    width={size}
+    height={size}
         >
-          <G
-            rotate={rotation - 90}
-            originX={(size / 2)}
-            originY={(size / 2)}
-          >
-            <Path
-              d={backgroundPath}
-              stroke={backgroundColor}
-              strokeWidth={width}
-              fill="none"
-            />
-            <Path
-              d={circlePath}
-              stroke={tintColor}
-              strokeWidth={width}
-              strokeLinecap="butt"
-              fill="none"
-            />
-          </G>
+        <G
+    rotate={rotation - 90}
+    originX={(size / 2)}
+    originY={(size / 2)}
+  >
+  <Path
+    d={backgroundPath}
+    stroke={backgroundColor}
+    strokeWidth={width}
+    fill="none"
+        />
+        <Path
+    d={circlePath}
+    stroke={tintColor}
+    strokeWidth={width}
+    strokeLinecap="butt"
+    fill="none"
+        />
+        </G>
         </Svg>
         {
           children && children(fill)
-        }
-      </View>
-    );
+  }
+  </View>
+  );
   }
 
 }
