@@ -40,10 +40,10 @@ export default class AnimatedCircularProgress extends React.Component {
 
     return (
         <AnimatedProgress
-    {...other}
-    fill={this.state.chartFillAnimation}
-  />
-  );
+            {...other}
+            fill={this.state.chartFillAnimation}
+        />
+    );
   }
 }
 
