@@ -1,7 +1,7 @@
 {
   "name": "react-native-circular-progress",
   "version": "0.0.7",
-  "description": "React Native component for creating animated, circular progress with ReactART",
+  "description": "React Native component for creating animated, circular progress with react-native-svg",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/bgryszko/react-native-circular-progress",
   "dependencies": {
-    "art": "^0.10.0",
-    "react-native-svg": "^4.0.0-rc"
+    "react-native-svg": "^4.1"
   }
 }
